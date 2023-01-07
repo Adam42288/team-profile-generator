@@ -72,6 +72,7 @@ inquirer
   .prompt(managerQuestions)
   .then((response) => console.log('Success!'));
 
+  // Use response to build the objects from the classes?
 
 function init() {}
 

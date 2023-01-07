@@ -1,17 +1,17 @@
 {
-    "name": "team-profile-generator",
-    "version": "1.0.0",
-    "description": "Team Profile Generator",
-    "main": "index.js",
-    "scripts": {
-      "test": "jest"
-    },
-    "author": "Adam Santillana",
-    "license": "ISC",
-    "devDependencies": {
-        "jest": "^24.9.0"
-      },
-    "dependencies": {
-      "inquirer": "^8.2.4"
-    }
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "Team Profile Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Adam Santillana",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4"
   }
+}
