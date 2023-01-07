@@ -1,13 +1,16 @@
 {
-    "name": "static-site",
+    "name": "team-profile-generator",
     "version": "1.0.0",
-    "description": "",
+    "description": "Team Profile Generator",
     "main": "index.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "jest"
     },
-    "author": "",
+    "author": "Adam Santillana",
     "license": "ISC",
+    "devDependencies": {
+        "jest": "^24.9.0"
+      },
     "dependencies": {
       "inquirer": "^8.2.4"
     }
