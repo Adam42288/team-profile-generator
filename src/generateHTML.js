@@ -3,7 +3,7 @@ const { moduleExpression } = require("@babel/types");
 // Start by creating manager card
 const createManager = function (manager) {
     return `
-    <div class ="col-4 mt-4">
+    <div class ="col-6 mt-6">
         <div class="card h-100">
             <div class="card-header">
                 <h3>${manager.name}</h3>
@@ -23,7 +23,7 @@ const createManager = function (manager) {
 // Engineer card
 const generateEngineer = function (engineer) {
     return `
-    <div class="col-4 mt-4">
+    <div class="col-6 mt-6">
         <div class="card h-100">
             <div class="card-header">
                 <h3>${engineer.name}</h3>
@@ -42,7 +42,7 @@ const generateEngineer = function (engineer) {
 // Intern card
 const generateIntern = function (intern) {
     return `
-    <div class="col-4 mt-4">
+    <div class="col-6 mt-6">
         <div class="card h-100">
             <div class="card-header">
                 <h3>${intern.name}</h3>
