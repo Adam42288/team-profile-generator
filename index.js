@@ -1,5 +1,14 @@
+// add inquirer into the project
 const inquirer = require('inquirer');
 
+// initialize variables for employee arrays
+let employees; 
+let manager = {
+    name: "",
+    id: "",
+    email: "",
+    officeNumber: "",
+};
 
 const managerQuestions = [
     {
@@ -68,9 +77,7 @@ const internQuestions = [
     }
 ];
 
-// inquirer
-//   .prompt(managerQuestions)
-//   .then((response) => console.log('Success!'));
+
 
   // Use response to build the objects from the classes?
   // Change question array into re-usable functions.
@@ -163,7 +170,39 @@ const getSchool = () => {
       .then((response) => console.log('Success!'));
   };
 //   getSchool();
-  
+const startApp = () => {
+inquirer
+  .prompt(managerQuestions)
+  .then((response) => {
+manager.name = response.name;
+manager.id = response.id;
+manager.email = response.email;
+manager.officeNumber = response.officeNumber;
+menu();
+});
+};
+
+const menu = () => {
+    inquirer
+      .prompt([
+        {
+          name: "start",
+          type: "list",
+          message: "What would you like to do?",
+          choices: ["Add engineer", "Add Intern", "Finish building team"],
+        },
+      ])
+      .then((res) => {
+        if (res.start === "Finish building team") {
+          return;
+        } else {
+          clearOrder();
+          getName();
+        }
+      });
+  };
+
 function init() {}
 
 init();
+startApp();
