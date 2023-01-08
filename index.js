@@ -1,5 +1,5 @@
 // require HTML file for generating webpage
-const generateHTML = require('./src/generateHTML');
+const generateHTML = require('./src/generateHTML.js');
 
 // require classes for use.
 const Manager = require('./lib/Manager');
