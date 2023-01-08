@@ -1,8 +1,15 @@
-// add inquirer into the project
+// Add inquirer and other node modules
 const inquirer = require('inquirer');
+const fs = require('fs');
+
+// Import classes into index.js
+const Employee = require('./lib/Employee');
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
 
 // initialize variables for employee arrays
-let employees; 
+let employees = []; 
 let manager = {
     name: "",
     id: "",
@@ -178,6 +185,8 @@ manager.name = response.name;
 manager.id = response.id;
 manager.email = response.email;
 manager.officeNumber = response.officeNumber;
+employees.push(response);
+console.log(employees);
 menu();
 });
 };
@@ -195,10 +204,12 @@ const menu = () => {
       .then((res) => {
         if (res.start === "Finish building team") {
           return;
-        } else {
-          clearOrder();
-          getName();
+        } else if (res.start === "Add engineer") {
+        
+        } else if (res.start === "Add Intern") {
+
         }
+
       });
   };
 
