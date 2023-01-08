@@ -165,8 +165,7 @@ const addEmployee = () => {
         }
     ])
     .then(employeeData => {
-        // data for employee types 
-
+        // Creating new employee objects based on answers and then pushing them to the employee array.
         let { name, id, email, role, github, school, confirmAddEmployee } = employeeData; 
         let employee; 
 
@@ -182,7 +181,7 @@ const addEmployee = () => {
         }
 
         employees.push(employee); 
-
+// If the confirm was true, adds the employees
         if (confirmAddEmployee) {
             return addEmployee(employees); 
         } else {
@@ -193,7 +192,7 @@ const addEmployee = () => {
 };
 
 
-// function to generate HTML page file using file system 
+// Generates HTML page file using file system 
 const writeFile = data => {
     fs.writeFile('./dist/index.html', data, err => {
         // if there is an error 
