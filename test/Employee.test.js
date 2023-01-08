@@ -1,5 +1,4 @@
 // import employee constructor
-const { default: test } = require('node:test');
 const Employee = require('../lib/Employee');
 
 // create an employee object

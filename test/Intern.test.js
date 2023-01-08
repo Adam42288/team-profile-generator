@@ -1,5 +1,5 @@
 // import Intern constructor
-const { default: test } = require('node:test');
+
 const Intern = require('../lib/Intern');
 
 // create an Intern object

@@ -1,5 +1,4 @@
 // import Engineer constructor
-const { default: test } = require('node:test');
 const Engineer = require('../lib/Engineer');
 
 // create an Engineer object
