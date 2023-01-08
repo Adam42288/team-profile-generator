@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Team Profile Generator",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "test": "jest"
   },
